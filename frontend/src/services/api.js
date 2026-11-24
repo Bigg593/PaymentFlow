@@ -102,6 +102,9 @@ export const getReportCsvUrl = (params = {}) => {
 // Currency conversion
 export const getConversionRates = () => api.get("/payments/rates");
 
+// FX rates endpoint (issue #662) — alias that hits the dedicated fx route
+export const getFxRates = () => api.get("/fx/rates");
+
 // Disputes
 export const flagDispute = (data) => api.post("/disputes", data);
 export const getDisputes = (params = {}) => api.get("/disputes", { params });

@@ -6,6 +6,7 @@ import TestnetBanner from "./TestnetBanner";
 import { useTheme } from "../pages/_app";
 import { useAdminAuthContext } from "../hooks/AdminAuthContext";
 import { SUPPORTED_LOCALES, LOCALE_NAMES } from "../i18n";
+import { PriceTicker } from "./PriceFeedWidget";
 
 const PUBLIC_LINKS = [
   { href: "/pay-fees",  i18nKey: "nav.payFees" },
@@ -229,6 +230,7 @@ export default function Navbar() {
           </div>
 
           <div className="nav-right">
+            <PriceTicker />
             <select
               className="nav-lang"
               value={i18n.resolvedLanguage || "en"}

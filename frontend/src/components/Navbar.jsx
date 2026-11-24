@@ -10,6 +10,7 @@ import { SUPPORTED_LOCALES, LOCALE_NAMES } from "../i18n";
 const PUBLIC_LINKS = [
   { href: "/pay-fees",  i18nKey: "nav.payFees" },
   { href: "/dashboard", i18nKey: "nav.dashboard" },
+  { href: "/students",  i18nKey: "nav.students" },
   { href: "/reports",   i18nKey: "nav.reports" },
 ];
 
